@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>colourlib</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style type="text/css">
+         html,body{
+         background: linear-gradient(120deg,#ff3399,#1a1aff);
+         padding-top:40px;
+         padding-bottom:40px;
+         }
+
+      </style>
+   </head>
+   <body >
+      <table align="center">
+         <tr>
+            <td>
+               <div align="center" style="background-color:white;width:300px;">
+                  <form style="padding-bottom:20px;" >
+                     <div style="padding-top:10px;font-weight:bold;font-size:20px;">
+                        <p>LOGIN </p>
+                     </div>
+                     <div style="padding-bottom:10px;">
+                        <input style="width:250px;padding: 15px 0 15px 10px;background-color:#e4e2e0;border:none;font-family: Arial, FontAwesome;" type="text" placeholder="&#xf003;  Email" name="uname" id="username" required>
+                     </div>
+                     <div style="padding-bottom:10px;">
+                        <input style="width:250px;padding: 15px 0 15px 10px;background-color:#e4e2e0;border:none;font-family: Arial, FontAwesome;" type="text" placeholder="&#xf023;  Password" name="uname" id="password" required>
+                     </div>
+                     <div style="text-align:left;padding-left:20px;padding-bottom: 20px;">
+                        <input type="checkbox" style="border:2px dotted #00f;background:#ff0000;"><span style="font-size: 14px font-family: sans-serif;color: gray;">Remember me </span>
+                     </div>
+                     <div>
+                        <input style="width:250px;padding: 15px 0 15px 0;border:none;font-size: 12px;font-weight: bold;color: white;background-color: #fa07a1; "  type="Submit" name="Submit" value="LOGIN"
+                           onclick="display()">
+                     </div>
+                     <div>
+                        <p style="font-size: 14px; font-family: sans-serif;color: gray;padding-top: 20px;padding-bottom: 20px;">Or login with</p>
+                     </div>
+                     <div>
+                        <a style="border: solid 1px #e4e2e0;text-decoration:none;padding:5px 30px;color:#20089c;font-weight:bold;" href="#">Facebook</a>
+                        <a style="border: solid 1px #e4e2e0;text-decoration:none;padding:5px 30px;color:black;font-weight:bold;" href="#">Google</a>
+                        <div style="padding-top:80px;">
+                           <p style="color:gray;">Not a member?<a style="color:gray;" href="#">Sign up now</a></p>
+                        </div>
+                        
+                     </div>
+                  </form>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <script>
+         function display() {
+           var username = document.getElementById("username").value;
+           var password = document.getElementById("password").value;
+           alert("Username: " + username + "\nPassword: " + password);
+         
+         
+         }
+      </script>
+   </body>
+</html>
